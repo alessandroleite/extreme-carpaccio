@@ -22,3 +22,17 @@ DEBUG=xcarpaccio:server npm start
 ```
 npm test
 ```
+
+## Running within a Docker Container
+
+# Build the image
+
+```
+  docker build -t extreme-carpaccio-server .
+```
+
+# Start the container
+
+```
+  docker run -d --name extreme-carpaccio-server -p 3000:3000 extreme-carpaccio-server
+```
